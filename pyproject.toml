@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scuf"
+version = "0.1.0"
+description = "A short description of your library"
+authors = [
+    { name = "Ilya Ryakin", email = "is.ryakin@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=1.21.0",
+    "open3d"
+    # "pandas>=1.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/aidagroup/SCUF"
+Documentation = "https://github.com/aidagroup/SCUF#readme"
+
+[tool.setuptools.packages.find]
+where = ["scuf"]  
+[tool.pytest.ini_options]
+testpaths = ["tests"]  
