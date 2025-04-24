@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scuf"
-version = "0.1.0"
+version = "0.1.1"
 description = "A short description of your library"
 authors = [
     { name = "Ilya Ryakin", email = "is.ryakin@gmail.com" }

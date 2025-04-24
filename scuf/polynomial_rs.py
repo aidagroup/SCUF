@@ -77,7 +77,7 @@ class PolynomialRS(AbstractRSFunctions):
         
         # Extract model parameters
         px = np.vstack([d[0] for d in models])
-
+        px[:, -1] *= -1
         # Compute residuals
         res = np.dot(pt, px.T)
 
